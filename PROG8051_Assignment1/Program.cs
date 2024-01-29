@@ -29,26 +29,22 @@ namespace PROG8051_Assignment1
                 Console.Write(" User Input: ");
                 int petType = Convert.ToInt32(Console.ReadLine());
 
+                MenuItem menu = new MenuItem();
+
                 //Validating the input
                 if (petType == 1)
                 {
-                    Console.WriteLine("You've chosen a Dog. What would you like to name your pet?");
-                    Console.Write(" User Input: ");
-                    string petName = Console.ReadLine();
-                    Console.WriteLine();
-                    Console.WriteLine("Welcome, " +petName+". Let's take good care of your lovely pet.");
+                      Console.WriteLine("You've chosen a Dog. What would you like to name your pet?");
+                      menu.inputName();
+
 
                 }
-
 
                 else if (petType == 2)
                 {
 
                     Console.WriteLine("You've chosen a Cat. What would you like to name your pet?");
-                    Console.Write(" User Input: ");
-                    string petName = Console.ReadLine();
-                    Console.WriteLine();
-                    Console.WriteLine("Welcome, " + petName + ". Let's take good care of your lovely pet.");
+                    menu.inputName();
                 }
 
 
@@ -56,13 +52,8 @@ namespace PROG8051_Assignment1
                 {
 
                     Console.WriteLine("You've chosen a Rabbit. What would you like to name your pet?");
-                    Console.Write(" User Input: ");
-                    string petName = Console.ReadLine();
-                    Console.WriteLine();
-                    Console.WriteLine("Welcome, " + petName + ". Let's take good care of your lovely pet.");
+                    menu.inputName();
                 }
-
-
 
                 else
                 {
