@@ -39,6 +39,7 @@ namespace PROG8051_Assignment1
                       string petName = Console.ReadLine();
                       menu.displayWelcomeMessage(petName);
                       menu.displayPetActions(petName);
+                      menu.displayStatusforInput(petName);
 
                 }
 
