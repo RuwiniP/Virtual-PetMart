@@ -35,8 +35,10 @@ namespace PROG8051_Assignment1
                 if (petType == 1)
                 {
                       Console.WriteLine("You've chosen a Dog. What would you like to name your pet?");
-                      menu.inputName();
-
+                      Console.Write(" User Input: ");
+                      string petName = Console.ReadLine();
+                      menu.displayWelcomeMessage(petName);
+                      menu.displayPetActions(petName);
 
                 }
 
@@ -44,7 +46,10 @@ namespace PROG8051_Assignment1
                 {
 
                     Console.WriteLine("You've chosen a Cat. What would you like to name your pet?");
-                    menu.inputName();
+                    Console.Write(" User Input: ");
+                    string petName = Console.ReadLine();
+                    menu.displayWelcomeMessage(petName);
+                    menu.displayPetActions(petName);
                 }
 
 
@@ -52,7 +57,10 @@ namespace PROG8051_Assignment1
                 {
 
                     Console.WriteLine("You've chosen a Rabbit. What would you like to name your pet?");
-                    menu.inputName();
+                    Console.Write(" User Input: ");
+                    string petName = Console.ReadLine();
+                    menu.displayWelcomeMessage(petName);
+                    menu.displayPetActions(petName);
                 }
 
                 else
