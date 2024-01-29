@@ -46,7 +46,10 @@ namespace PROG8051_Assignment1
                 case 5:
                     Console.WriteLine();
                     Console.WriteLine($"Thank you for playing with {virtualPet.petName}. Goodbye!");
-                    return;
+                    Thread.Sleep(4000);
+                    Environment.Exit(0);
+                    break;
+
                 default:
                     Console.WriteLine("Please input a valid number");
                     break;
