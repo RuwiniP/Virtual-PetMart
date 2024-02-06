@@ -13,6 +13,10 @@ namespace PROG8051_Assignment1
         public int happinessValue { get; private set; } = 5;
         public int healthValue { get; private set; } = 5;
 
+        //--Conditions--
+        //'Slightly' increased or decreased = value has been increased or decreased by 1
+        //Increased or decreased = value has been increased or decreased by 2
+
         public void Feedpet()
         {
 
@@ -20,6 +24,13 @@ namespace PROG8051_Assignment1
             healthValue = healthValue + 1;
             hungerValue = hungerValue < 0 ? 0 : hungerValue; //to avoid having values more than 10 or less than 0
             healthValue = healthValue > 10 ? 10 : healthValue;
+
+            if (healthValue < 2)
+            {
+                Console.WriteLine("********************************************");
+                Console.WriteLine($"{petName} is not feeling well itseems. Give him some time to rest!");
+            }
+
 
             Console.WriteLine($"You fed {petName}. His hunger decreased and health slightly increased!");
         }
@@ -33,6 +44,14 @@ namespace PROG8051_Assignment1
             hungerValue = hungerValue > 10 ? 10 : hungerValue; //to avoid having values more than 10
             happinessValue = happinessValue > 10 ? 10 : happinessValue;
 
+            if (hungerValue >= 8)
+            {
+                Console.WriteLine("********************************************");
+                Console.WriteLine($"{petName} is too hungry to play. Feed him before playing!");
+            }
+
+            else
+
             Console.WriteLine($"You played with {petName}. His happiness increased but he is feeling a little bit hungry now!");
         }
 
@@ -42,6 +61,8 @@ namespace PROG8051_Assignment1
             happinessValue = happinessValue - 1;
             happinessValue = happinessValue < 0 ? 0 : happinessValue; //to avoid having values more than 10 or less than 0
             healthValue = healthValue > 10 ? 10 : healthValue;
+
+            
             Console.WriteLine($"You made {petName} rest. His health improved but he is feeling a little bit sad now!");
         }
 
