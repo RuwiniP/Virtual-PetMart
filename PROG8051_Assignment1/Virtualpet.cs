@@ -46,7 +46,7 @@ namespace PROG8051_Assignment1
 
             if (hungerValue >= 8)
             {
-                Console.WriteLine("********************************************");
+                Console.WriteLine("*********************************************");
                 Console.WriteLine($"{petName} is too hungry to play. Feed him before playing!");
             }
 
