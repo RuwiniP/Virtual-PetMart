@@ -15,11 +15,13 @@ This C# console application has been developed as an assignment for the High-Qua
    ![image](https://github.com/RuwiniP/Virtual-PetMart/assets/31927767/f318a73a-bc25-499c-908e-c9820177b4e9)
 
    
-3. Open the project from Visual Studio
+2. Open the project from Visual Studio
 
    
-5. Run the project
+3. Run the project
 
 ![image](https://github.com/RuwiniP/Virtual-PetMart/assets/31927767/9608f082-a89b-42c6-8279-f43e89e8f151)
 
-7. Observe the console to perform actions
+4. Observe the console to perform actions
+
+~ Hope you will enjoy my virtual pet-mart simulation application :) 
