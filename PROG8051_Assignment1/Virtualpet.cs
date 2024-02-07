@@ -22,13 +22,13 @@ namespace PROG8051_Assignment1
 
             hungerValue = hungerValue - 2;
             healthValue = healthValue + 1;
-            hungerValue = hungerValue < 0 ? 0 : hungerValue; //to avoid having values more than 10 or less than 0
+            hungerValue = hungerValue < 0 ? 0 : hungerValue; 
             healthValue = healthValue > 10 ? 10 : healthValue;
 
             if (healthValue < 2)
             {
                 Console.WriteLine("********************************************");
-                Console.WriteLine($"{petName} is not feeling well itseems. Give him some time to rest!");
+                Console.WriteLine($"{petName} is not feeling well it seems. Give him some time to rest!");
             }
 
 
@@ -59,13 +59,37 @@ namespace PROG8051_Assignment1
         {
             healthValue = healthValue + 2;
             happinessValue = happinessValue - 1;
-            happinessValue = happinessValue < 0 ? 0 : happinessValue; //to avoid having values more than 10 or less than 0
+            happinessValue = happinessValue < 0 ? 0 : happinessValue; 
             healthValue = healthValue > 10 ? 10 : healthValue;
 
             
             Console.WriteLine($"You made {petName} rest. His health improved but he is feeling a little bit sad now!");
         }
 
+        //method for pass time
+        public void Passtime()
+        {
+            hungerValue = hungerValue + 1; //hunger value should be increased with the time
+            happinessValue = happinessValue - 1; //When neglecting happiness value should be decreased
+
+            
+            hungerValue = hungerValue > 10 ? 10 : hungerValue;
+            happinessValue = happinessValue < 0 ? 0 : happinessValue;
+
+            if (hungerValue >= 8)
+            {
+                Console.WriteLine("*********************************************");
+                Console.WriteLine($"{petName} is too hungry.You haven't fed him enough lately!");
+            }
+
+            else if (happinessValue >= 2)
+            {
+
+                Console.WriteLine("*********************************************");
+                Console.WriteLine($"{petName} is not feeling happy.Try out some activities to cheer your buddy!");
+            }
+
+        }
         public void DisplayStatusReport()
         {
 

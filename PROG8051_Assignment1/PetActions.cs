@@ -16,7 +16,8 @@ namespace PROG8051_Assignment1
             Console.WriteLine($"Welcome, {virtualPet.petName}! Let's take good care of your lovely pet.");
         }
 
-        public void DisplayPetActions()
+        //Display Main Actions
+        public void DisplayPetActions() 
         {
             Console.WriteLine();
             Console.WriteLine("---Main menu of Actions---");
@@ -54,6 +55,7 @@ namespace PROG8051_Assignment1
                     Console.WriteLine("Please input a valid number");
                     break;
             }
+
         }
     }
 

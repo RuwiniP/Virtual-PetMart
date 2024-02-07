@@ -53,6 +53,7 @@ namespace PROG8051_Assignment1
                     break;
             }
 
+            Console.WriteLine();
             Console.Write("User Input: ");
             petName = Console.ReadLine();
 
@@ -63,6 +64,7 @@ namespace PROG8051_Assignment1
             while (true)
             {
                 petActions.DisplayPetActions();
+                Console.WriteLine();
                 Console.Write("User Input: ");
                 if (!int.TryParse(Console.ReadLine(), out int actionNo))
                 {
