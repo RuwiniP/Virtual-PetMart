@@ -8,7 +8,13 @@ This C# console application has been developed as an assignment for the High-Qua
 
 # Setup Instructions
 
-1. Clone the project
-2. Open the project from Visual Studio
-3. Run the project
-4. Observe the console to perform actions
+1. Clone the project from gitHub
+
+   git clone <url>
+
+   ![image](https://github.com/RuwiniP/Virtual-PetMart/assets/31927767/f318a73a-bc25-499c-908e-c9820177b4e9)
+
+   
+3. Open the project from Visual Studio
+4. Run the project
+5. Observe the console to perform actions
