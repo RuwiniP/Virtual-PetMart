@@ -24,4 +24,4 @@ This C# console application has been developed as an assignment for the High-Qua
 
 4. Observe the console to perform actions
 
-~ Hope you will enjoy my virtual pet-mart simulation application :) 
+~ Hope you will enjoy my virtual pet-mart simulatior application :) 
